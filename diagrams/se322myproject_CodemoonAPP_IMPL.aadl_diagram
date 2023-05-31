@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="3295cb6e-066d-4c32-81b3-55aa3ff56917" manual="true">
+    <element uuid="1223d2d6-9f53-48b4-a805-37a54afba341" manual="true">
+      <element uuid="a9d88914-106c-458e-81dd-547a446ef911" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>CodemoonAPP_IMPL_new_connection</seg>
+      </bo>
+    </element>
+    <element uuid="9ed847a4-671e-4f63-9f2d-e8b42c1c46b8" manual="true">
+      <element uuid="af6ff670-0214-46fb-ab9e-ea0feba71b90" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>CodemoonAPP_IMPL_new_connection2</seg>
+      </bo>
+    </element>
+    <element uuid="03a81783-4487-4ceb-8f35-6472969dfab2" manual="true">
+      <element uuid="2dc363a7-57f2-4f61-8de9-ead0e51cc8ca" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn1</seg>
+      </bo>
+    </element>
+    <element uuid="4d08cb7d-5bf8-4ed7-b5c2-ebfc44da57b8" manual="true">
+      <element uuid="9b993a35-1a6b-4276-96c7-86eca0bf6e4d" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn2</seg>
+      </bo>
+    </element>
+    <element uuid="265bdc59-8efb-4ced-ab71-1c6a59eabf87" manual="true">
+      <element uuid="e62c265b-21e6-4306-b22a-850c10c89daf" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn3</seg>
+      </bo>
+      <bendpoints>
+        <point x="493.8372497558594" y="80.0"/>
+        <point x="493.8372497558594" y="210.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="203ddedb-5a6e-4078-89eb-fc970f6c7251" manual="true">
+      <element uuid="cfb019fb-8ffb-454a-b924-99668bfc58ec" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn4</seg>
+      </bo>
+    </element>
+    <element uuid="ea87b792-ad81-41c6-a7c7-f8f5eadd5857" manual="true">
+      <element uuid="dfbefcf2-e7d2-4eb7-a13c-10338f7a5123" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn5</seg>
+      </bo>
+      <bendpoints>
+        <point x="1108.2916259765625" y="335.0"/>
+        <point x="1108.2916259765625" y="180.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="4826e515-5784-4be8-936b-56c86f3dfd05" manual="true">
+      <element uuid="14349d11-4eee-404d-84dc-cb20bb14e7ad" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn6</seg>
+      </bo>
+    </element>
+    <element uuid="a5fe3ec6-b391-4c82-b086-5e411a5afab1" manual="true">
+      <element uuid="d1b920b7-3feb-46e1-8e90-206ef59e9052" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn7</seg>
+      </bo>
+    </element>
+    <element uuid="7be675c2-9387-4b7a-b482-1d1e2773846c" manual="true">
+      <element uuid="0de3fc9c-5c5e-4a9f-b17a-3dcdf543558b" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn8</seg>
+      </bo>
+    </element>
+    <element uuid="912296df-ba1f-4850-ab1f-c7d6ab4aeec3" manual="true">
+      <element uuid="121c123c-32bc-4fd6-9ec7-43735a1645e1" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn9</seg>
+      </bo>
+    </element>
+    <element uuid="c2cbb197-0225-487a-9af3-376dbdb3eea6" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>receive_req</seg>
+      </bo>
+      <position y="48.0"/>
+    </element>
+    <element uuid="bb62cdf4-16b6-4750-a56b-486b65902c6e" manual="true">
+      <element uuid="14ebe7dd-e889-4841-b48a-1af77e8f8f0f" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_event</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="8b1afc06-2704-4072-8673-5086d2ef0a4b" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>replication</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>BDB</seg>
+      </bo>
+      <position x="1118.2916259765625" y="88.0"/>
+      <size width="230.15363311767578" height="110.0"/>
+    </element>
+    <element uuid="84966798-870b-48e3-bf2c-46a410d2c802" manual="true">
+      <element uuid="4531812e-2b27-4e46-b8b9-c26597a96ff7" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_event</seg>
+        </bo>
+        <position x="228.51821517944336" y="135.0"/>
+      </element>
+      <element uuid="6a71feeb-7c3e-4b8a-a947-91f8b0f92741" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>get_event</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>BuWS</seg>
+      </bo>
+      <position x="802.91015625" y="168.0"/>
+      <size width="295.3814926147461" height="310.0"/>
+    </element>
+    <element uuid="fdac5343-43f9-42f8-a433-be4e24c8b1fc" manual="true">
+      <element uuid="de2cbe88-f970-4252-a97a-4a0dba1963f5" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_event</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="0a1d9c97-a3e1-4734-a376-564553c57bb6" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>replication</seg>
+        </bo>
+        <position x="148.4856719970703" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>DB</seg>
+      </bo>
+      <position x="839.9706993103027" y="88.0"/>
+      <size width="221.26040649414062" height="60.0"/>
+    </element>
+    <element uuid="66d9cef8-1b42-46eb-aeb7-98fbcb3c5d72" manual="true">
+      <element uuid="5a5fb7ef-a056-4f83-9160-6f2f38aab275" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>receive_req</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="61bf6bca-be9b-4cd9-a835-4ba1da9071ae" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>send_event</seg>
+        </bo>
+        <position x="155.88801956176758" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>LB</seg>
+      </bo>
+      <position x="247.00390625" y="38.0"/>
+      <size width="236.83333206176758" height="60.0"/>
+    </element>
+    <element uuid="4569f672-99ed-4c75-89d4-a659c477fff5" manual="true">
+      <element uuid="b741e994-72a2-42e1-b4a6-f2f474cb9091" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_event</seg>
+        </bo>
+        <position x="212.20962142944336" y="60.0"/>
+      </element>
+      <element uuid="c4d0dcfd-c66c-4a0d-b812-52950c489ae5" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>get_event</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>WS</seg>
+      </bo>
+      <position x="503.8372497558594" y="38.0"/>
+      <size width="279.0728988647461" height="160.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>CodemoonAPP.IMPL</seg>
+    </bo>
+    <position/>
+    <size width="1442.11328125" height="490.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>se322myproject::CodemoonAPP.IMPL</seg>
+    </context>
+  </config>
+</diagram:Diagram>

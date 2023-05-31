@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="663534e4-73b4-45b2-b99c-c2243e494222" manual="true">
+    <element uuid="38d0a805-b062-47a2-985c-5bc522266eac" manual="true">
+      <element uuid="e449933c-5f1e-4bc2-a5c7-93d2b0ec041b" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn1</seg>
+      </bo>
+    </element>
+    <element uuid="e2dda5a8-0966-4468-b2d8-f82ac80a5854" manual="true">
+      <element uuid="12424845-f854-49d7-b55e-d28cad11b108" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn2</seg>
+      </bo>
+      <bendpoints>
+        <point x="236.30076599121094" y="80.0"/>
+        <point x="236.30076599121094" y="260.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="b273f964-e761-48e1-8d9f-d6d1d28dcbef" manual="true">
+      <element uuid="d51ec02c-b5e6-43d2-a4d4-0338f98180c7" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn3</seg>
+      </bo>
+      <bendpoints>
+        <point x="236.30076599121094" y="80.0"/>
+        <point x="236.30076599121094" y="490.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="1b87f0f3-faf0-438b-b0cd-c1ad42cf2be6" manual="true">
+      <element uuid="3f350c64-c8d0-4099-bb26-7ff306baa0e9" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn4</seg>
+      </bo>
+    </element>
+    <element uuid="ad62a20f-135b-4b34-80b5-f1d4245ebdb3" manual="true">
+      <element uuid="3b2a6c6f-3e83-4fa2-a5ea-4a11f92fc166" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn5</seg>
+      </bo>
+      <bendpoints>
+        <point x="551.6822509765625" y="130.0"/>
+        <point x="551.6822509765625" y="335.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="9da49fc0-ad3f-425c-9232-455ef4faaf24" manual="true">
+      <element uuid="fa58d25a-3c96-47ad-9238-15a0c16dbe3e" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn6</seg>
+      </bo>
+      <bendpoints>
+        <point x="551.6822509765625" y="615.0"/>
+        <point x="551.6822509765625" y="335.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="f92c6035-8c66-4d0b-b99c-db4102ef70b2" manual="true">
+      <element uuid="3b11d308-25a4-4ec5-9f90-aecb5cc5431b" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn7</seg>
+      </bo>
+    </element>
+    <element uuid="0b5b5a5e-dc74-4e12-996c-441b3e3daa0a" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>send_ping</seg>
+      </bo>
+      <position y="48.0"/>
+    </element>
+    <element uuid="04b323c5-210e-4dff-bf85-587b7625adea" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>send_reply</seg>
+      </bo>
+      <position x="893.6874542236328" y="303.0"/>
+    </element>
+    <element uuid="73729b82-19f0-4bcd-8917-b1549098a3b8" manual="true">
+      <element uuid="dae69899-ee1a-4bdb-a2a3-43974ae82d23" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>send_echo</seg>
+        </bo>
+        <position x="218.14060974121094" y="135.0"/>
+      </element>
+      <element uuid="6dfefa48-c24a-4e6c-8069-8a17e8702cc4" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>send_ping</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>BuWS</seg>
+      </bo>
+      <position x="246.30076599121094" y="448.0"/>
+      <size width="295.3814926147461" height="310.0"/>
+    </element>
+    <element uuid="45b984dd-f337-46b8-afd4-23f0220d4f96" manual="true">
+      <element uuid="48eb38a8-bc13-4bd7-b90d-efda75bb3267" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>send_echo</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="9fe8dddb-456d-4ec0-a729-752d8e66cab8" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>send_reply</seg>
+        </bo>
+        <position x="165.54947662353516" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>MON</seg>
+      </bo>
+      <position x="561.6822662353516" y="293.0"/>
+      <size width="242.77733612060547" height="60.0"/>
+    </element>
+    <element uuid="0ad9b89e-a6b6-4a3b-aa8e-96a574490032" manual="true">
+      <element uuid="ae2cc34e-8a11-48b7-9f8c-7d4ba6686d10" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>send_echo</seg>
+        </bo>
+        <position x="172.17708206176758" y="85.0"/>
+      </element>
+      <element uuid="59e5d849-592a-45c6-b96e-83c72c1c5392" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>send_ping</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>WS1</seg>
+      </bo>
+      <position x="269.2825298309326" y="218.0"/>
+      <size width="249.41796493530273" height="210.0"/>
+    </element>
+    <element uuid="9122e428-4b12-47be-adf2-70aa772aef05" manual="true">
+      <element uuid="6f144828-ab67-405c-9f07-0a94bd9e2925" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>send_echo</seg>
+        </bo>
+        <position x="172.17708206176758" y="60.0"/>
+      </element>
+      <element uuid="d9abb2b5-b883-4605-8793-a50da6127cf2" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>send_ping</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>WS2</seg>
+      </bo>
+      <position x="269.2825298309326" y="38.0"/>
+      <size width="249.41796493530273" height="160.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>pingEcho.IMPL</seg>
+    </bo>
+    <position/>
+    <size width="970.9153137207031" height="830.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>se322myproject::pingEcho.IMPL</seg>
+    </context>
+  </config>
+</diagram:Diagram>

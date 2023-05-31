@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="6be82cd0-0a5e-4eec-8b19-44dc2ce1ce5c" manual="true">
+    <element uuid="4a5c88ba-e8db-430c-9989-4e50b67a72fa" manual="true">
+      <element uuid="3920bc00-0f74-4afc-b14f-714f60f33393" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>redundantSpare_IMPL_new_connection</seg>
+      </bo>
+    </element>
+    <element uuid="7c8a9b1f-f91b-4322-9fee-ed6115be0ecd" manual="true">
+      <element uuid="61d54fbc-8108-4715-9990-1437a49a258d" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>redundantSpare_IMPL_new_connection2</seg>
+      </bo>
+    </element>
+    <element uuid="c2a8372c-e769-4da3-a501-e0feefcf0ada" manual="true">
+      <element uuid="75b6f20f-1dc9-40eb-bbbb-1b1722d9190d" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>redundantSpare_IMPL_new_connection3</seg>
+      </bo>
+    </element>
+    <element uuid="02082028-8354-49f5-bb93-e808cfaa9d9e" manual="true">
+      <element uuid="41946a14-5fa2-41bf-b55b-3f79f8f8344c" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>redundantSpare_IMPL_new_connection4</seg>
+      </bo>
+      <bendpoints>
+        <point x="1204.0" y="110.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="64ea3da4-1a7a-4c32-a39b-55f397aaebf6" manual="true">
+      <element uuid="bd076675-8c10-4254-94ab-5b3d6759a519" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>redundantSpare_IMPL_new_connection5</seg>
+      </bo>
+      <bendpoints>
+        <point x="1263.0" y="194.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="dd5e5a8f-a9a3-4dd4-9483-7ff89f1fbbed" manual="true">
+      <element uuid="2c19e16e-10c2-4ed0-aecf-b58e5f2b38f9" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_event</seg>
+        </bo>
+        <position y="57.0"/>
+      </element>
+      <element uuid="a307e548-b947-44bd-b1f7-e511b7bb2aea" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>replication</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>BDB</seg>
+      </bo>
+      <position x="1020.0" y="40.0"/>
+      <size width="230.0" height="110.0"/>
+    </element>
+    <element uuid="378461d1-f8a3-40b1-91a5-0756bc412759" manual="true">
+      <element uuid="6eb777b3-dd31-43bf-a82a-575ed905967d" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>change_server</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="1da634ba-19be-432b-8b6c-c5d8b3ba2762" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_event</seg>
+        </bo>
+        <position x="228.13672256469727" y="2.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>BuWS</seg>
+      </bo>
+      <position x="649.0" y="118.0"/>
+      <size width="295.0" height="82.0"/>
+    </element>
+    <element uuid="f39f1756-c723-4afb-8986-e6916f944f96" manual="true">
+      <element uuid="07a6e413-1845-44fe-8eea-8b14e4ef5ba9" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_event</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="97bac560-ce39-4b7e-94f7-9608e04039e7" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>replication</seg>
+        </bo>
+        <position x="148.2252655029297" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>DB</seg>
+      </bo>
+      <position x="686.0" y="38.0"/>
+      <size width="221.0" height="60.0"/>
+    </element>
+    <element uuid="9d8e5d86-ba58-467d-ac18-5e41984244c2" manual="true">
+      <element uuid="af77dcf6-76e9-4455-80ba-7104e4f64e20" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>send_fault</seg>
+        </bo>
+        <position x="173.47006225585938" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>PingE</seg>
+      </bo>
+      <position x="80.0" y="70.0"/>
+      <size width="247.0" height="110.0"/>
+    </element>
+    <element uuid="6b6c5a12-fa23-4d1c-a822-8fe677a65d96" manual="true">
+      <element uuid="e19bb4f0-30aa-4cc4-bef0-1d45f595caca" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>change_server</seg>
+        </bo>
+        <position x="178.79688262939453" y="60.0"/>
+      </element>
+      <element uuid="aabb3bb6-d014-4f93-8771-be67280debed" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_event</seg>
+        </bo>
+        <position x="212.13672256469727" y="10.0"/>
+      </element>
+      <element uuid="a7e85ff5-6c34-4572-ba94-bccbd27c88aa" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>send_fault</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>WS</seg>
+      </bo>
+      <position x="350.0" y="70.0"/>
+      <size width="279.0" height="110.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>redundantSpare.IMPL</seg>
+    </bo>
+    <position x="250.0" y="30.0"/>
+    <size width="1277.0" height="230.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>se322myproject::redundantSpare.IMPL</seg>
+    </context>
+  </config>
+</diagram:Diagram>

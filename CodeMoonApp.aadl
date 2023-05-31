@@ -1,0 +1,155 @@
+package se322myproject
+public
+	system CodemoonAPP
+	features
+		receive_req: in data port;
+end myAPP;
+	
+	system loadBalancer
+		features
+		send_event: out data port;
+		receive_req: in data port;
+		
+	end loadBalancer;
+	
+	system webServer
+	features
+		get_event: in data port;
+		db_event: out data port;
+		change_server: out data port;
+		send_fault: in data port;
+end webServer;
+	system ws1
+	 	features
+	 		recieve_req: in data port;
+	 		send_req: out data port;
+	 		send_ping: in data port;
+	 		send_echo: out data port;
+	 		send_fault: out data port;
+	 end ws1;
+	 
+	system ws2
+	 	features
+	 		recieve_req: in data port;
+	 		send_req: out data port;
+	 		send_ping: in data port;
+	 		send_echo: out data port;
+	 end ws2;
+	 
+	system backupws
+	features
+		recieve_req: in data port;
+		send_req: out data port;
+		send_echo: out data port;
+		send_ping: in data port;
+		get_event: in data port;
+		db_event: out data port;
+
+		change_server: in data port;
+end backupws;
+	 
+	system db
+		features
+			db_event: in data port;
+			replication: out data port;
+	end db;
+	system dbBackup
+		features
+			db_event: in data port;
+			replication: in data port;
+	end dbBackup;
+	system pingEcho
+	features
+		send_ping: in data port;
+		send_reply: out data port;
+		send_fault: out data port;
+	end pingEcho;
+	
+	system redundantSpare
+
+		features
+		get_event: in data port;
+		db_event: out data port;
+	end redundantSpare;
+	system monitoringSystem
+		features
+			send_echo: in data port;
+			send_reply: out data port;
+	end monitoringSystem;
+	
+	system implementation CodemoonAPP.IMPL
+	subcomponents
+		BuWS: system backupws;
+		LB: system loadBalancer;
+		WS: system webserver;
+		DB: system db;
+		BDB: system dbBackup;
+	connections
+		conn1: port LB.send_event -> WS.get_event;
+		conn2: port WS.db_event -> DB.db_event;
+		conn3: port LB.send_event -> BuWS.get_event;
+		conn4: feature receive_req -> LB.receive_req;
+		conn5: port BuWS.db_event -> BDB.db_event;
+		conn6: port DB.replication -> BDB.replication;
+		conn7: port receive_req -> LB.receive_req;
+		conn8: port DB.replication -> BDB.replication;
+		conn9: port receive_req -> LB.receive_req;
+		CodemoonAPP_IMPL_new_connection: port DB.replication -> BDB.replication;
+		CodemoonAPP_IMPL_new_connection2: port receive_req -> LB.receive_req;
+end CodemoonAPP.IMPL;
+
+system implementation webserver.IMPL
+	subcomponents
+		WS1: system ws1;
+		WS2: system ws2;
+		BuWS: system backupws;
+	connections
+		conn1: port get_event -> WS2.recieve_req;
+		conn2: port get_event -> BuWS.recieve_req;
+		conn3: port get_event -> WS1.recieve_req;
+		conn4: port WS2.send_req -> db_event;
+		conn5: port WS1.send_req -> db_event;
+		conn6: port BuWS.send_req -> db_event;
+end webserver.IMPL;
+
+system implementation pingEcho.IMPL
+	subcomponents
+		WS1: system ws1;
+		WS2: system ws2;
+		BuWS: system backupws;
+		MON: system monitoringSystem;
+	connections
+		conn1: port send_ping -> WS2.send_ping;
+		conn2: port send_ping -> WS1.send_ping;
+		conn3: port send_ping -> BuWS.send_ping;
+		conn4: port WS1.send_echo -> MON.send_echo;
+		conn5: port WS2.send_echo -> MON.send_echo;
+		conn6: port BuWS.send_echo -> MON.send_echo;
+		conn7: port MON.send_reply -> send_reply;
+end pingEcho.IMPL;
+
+system implementation redundantSpare.IMPL
+	subcomponents
+		PingE: system pingEcho;
+		WS: system webserver;
+		BuWS: system backupws;
+		DB: system db;
+		BDB: system dbBackup;
+	connections
+		conn1: port PingE.send_fault -> WS.send_fault;
+		conn2: port WS.change_server -> BuWS.change_server;
+		conn3: port BuWS.db_event -> BDB.db_event;
+		conn4: port DB.replication -> BDB.replication;
+		conn5: port WS.db_event -> DB.db_event;
+		redundantSpare_IMPL_new_connection: port PingE.send_fault -> WS.send_fault;
+		redundantSpare_IMPL_new_connection2: port WS.db_event -> DB.db_event;
+		redundantSpare_IMPL_new_connection3: port WS.change_server -> BuWS.change_server;
+		redundantSpare_IMPL_new_connection4: port DB.replication -> BDB.replication;
+		redundantSpare_IMPL_new_connection5: port BuWS.db_event -> BDB.db_event;
+end redundantSpare.IMPL;
+		
+		
+
+
+	
+end se322myproject;
